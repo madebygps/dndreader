@@ -1,0 +1,23 @@
+# Downloaded models and generated audio
+*.onnx
+*.onnx.data
+*.gguf
+*.wav
+*.pcm
+models/
+
+# Local app data and imported content
+local-data/
+*.db
+*.db-shm
+*.db-wal
+
+# Build and editor output
+**/bin/
+**/obj/
+.vs/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
