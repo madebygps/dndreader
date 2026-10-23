@@ -1,0 +1,35 @@
+At the edge of a quiet town, a small library opened its doors before the morning traffic began.
+The first visitor carried a notebook, a reusable cup, and a list of questions about the building.
+She wanted to understand how a place filled with old books could prepare for a changing future.
+The librarian suggested that they begin with the reading room, where sunlight fell across a long wooden table.
+Every chair had been repaired rather than replaced, and the lamps used less electricity than the ones installed ten years earlier.
+A notice beside the entrance explained that the library now offered both printed books and downloadable audio.
+For some readers, listening made a difficult chapter easier to follow without taking away the pleasure of the story.
+Others preferred to switch between the page and the narrator while traveling, cooking, or resting their eyes.
+The visitor asked whether a computer could provide that narration without sending the text to a distant server.
+The librarian brought out a laptop and opened an article about the history of the local railway.
+Instead of preparing the entire recording first, the program divided the article into individual sentences.
+It generated the opening sentence, began playing it, and worked on the next sentence at the same time.
+The important question was not simply whether one sentence could be spoken quickly.
+The program needed to maintain enough finished audio to keep the listener from waiting between sentences.
+They imagined the waiting audio as water in a tank, with a tap filling it and a small outlet draining it.
+If the tap supplied water faster than the outlet removed it, the level would gradually rise.
+If a difficult sentence took unusually long, the stored audio would give the computer time to catch up.
+The visitor wrote down three measurements: the initial wait, the smallest reserve, and the number of interruptions.
+She also noted that a reserve naturally falls to zero when the final sentence finishes playing.
+That normal ending should not be mistaken for a failure in the middle of a reading session.
+Outside, a delivery driver unloaded twelve boxes while a bus stopped across the street.
+Inside, the laptop continued reading without needing to prepare a separate audio file for every sentence.
+The article described a station built in 1924 and a renovation that cost 125,000 dollars.
+It included a timetable, several unfamiliar place names, and a quotation from an engineer.
+Those details made the passage more demanding than a collection of short and familiar greetings.
+The librarian explained that a useful experiment should resemble the work the finished application would actually do.
+A quick demonstration could prove that the pieces connected, but a longer session could reveal problems hidden by an average.
+They agreed to keep the voice and speaking speed unchanged so that comparisons would remain meaningful.
+They would also distinguish measurements made by the program from judgments made by a person listening.
+A software counter could report an empty buffer, but it could not decide whether a voice sounded pleasant.
+Likewise, a smooth recording would not prove that the same settings would work on every other computer.
+By the time the article reached its final paragraph, several more visitors had entered the reading room.
+One borrowed a history book, another returned a map, and a child asked where the astronomy shelf had moved.
+The visitor closed her notebook and thanked the librarian for turning an abstract performance question into something observable.
+Before leaving, she listened to the last sentence and waited for the room to become quiet again.

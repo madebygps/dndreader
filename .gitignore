@@ -5,6 +5,7 @@
 *.wav
 *.pcm
 models/
+experiments/01-kokoro-windows-arm64/assets/
 
 # Local app data and imported content
 local-data/
