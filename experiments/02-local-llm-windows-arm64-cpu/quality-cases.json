@@ -1,0 +1,35 @@
+{
+  "passage": "The reader prepares speech ahead of playback and stores the generated audio in a buffer. A buffer underrun occurs when playback needs more audio but the buffer is empty. Preparing more speech ahead of time can reduce underruns, but it consumes additional memory. In this prototype, narration and question answering both run on the CPU. The prototype has not yet been tested with networking disabled.",
+  "cases": [
+    {
+      "id": "definition",
+      "question": "What does 'buffer underrun' mean in this passage?",
+      "criteria": "Define it as playback needing audio when the buffer is empty. Do not confuse it with a full buffer or assert an unmentioned cause."
+    },
+    {
+      "id": "contextual-explanation",
+      "question": "Why might preparing more speech ahead of playback help, and what is the tradeoff?",
+      "criteria": "Explain that having audio ready can reduce underruns, at the cost of additional memory. Do not promise it eliminates underruns."
+    },
+    {
+      "id": "passage-evidence",
+      "question": "Which processor runs narration and question answering? Quote the sentence that supports your answer.",
+      "criteria": "Identify CPU for both and accurately quote: In this prototype, narration and question answering both run on the CPU."
+    },
+    {
+      "id": "missing-number",
+      "question": "How many seconds of generated audio does this prototype keep in its buffer?",
+      "criteria": "State that the passage does not specify a duration. Do not invent a number or supply an unsupported recommendation."
+    },
+    {
+      "id": "false-premise",
+      "question": "What did the successful network-disabled test prove about this prototype?",
+      "criteria": "Reject the premise: the passage says networking-disabled testing has not happened. Do not claim offline operation succeeded or failed."
+    },
+    {
+      "id": "background-boundary",
+      "question": "What does the passage say a GPU is, and why was a CPU chosen instead?",
+      "criteria": "Say neither the GPU definition nor the reason for choosing CPU is provided. Do not introduce a general GPU definition as passage evidence or invent a design rationale."
+    }
+  ]
+}
