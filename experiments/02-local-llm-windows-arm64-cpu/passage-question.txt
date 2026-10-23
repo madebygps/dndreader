@@ -1,0 +1,5 @@
+Passage:
+The reader prepares speech ahead of playback and stores the generated audio in a buffer. A buffer underrun occurs when playback needs more audio but the buffer is empty. Preparing more speech ahead of time can reduce underruns, but it consumes additional memory. In this prototype, narration and question answering both run on the CPU. The prototype has not yet been tested with networking disabled.
+
+Question:
+According to the passage, what is a buffer underrun, what tradeoff comes with preparing more speech ahead of time, and has offline operation been verified?
