@@ -2,7 +2,7 @@
 
 Status: not started.
 
-Dependencies: working baselines from [experiment 01](01-kokoro-windows-arm64.md) and [experiment 02](02-local-llm-snapdragon-npu.md).
+Dependencies: working baselines from [experiment 01](01-kokoro-windows-arm64.md) and [experiment 02](02-local-llm-windows-arm64-cpu.md).
 
 ## Question and success criteria
 
@@ -20,9 +20,9 @@ The ten-minute duration is a proposed test target, not an observed result.
 
 ## Current evidence
 
-**Hypothesis:** CPU speech and NPU questions may reduce direct CPU contention.
+**Hypothesis:** CPU speech and CPU question generation may contend for CPU time and memory bandwidth.
 
-**Unknown:** shared memory bandwidth, driver behavior, CPU preprocessing, and runtime scheduling may still cause interference. Separate processors do not guarantee uninterrupted playback.
+**Unknown:** memory bandwidth, CPU preprocessing, and runtime scheduling may affect playback. Results on the current Snapdragon CPU do not predict performance on other Windows ARM64 processors.
 
 ## Environment
 
@@ -48,7 +48,7 @@ Record the pinned configurations from experiments 01 and 02, playback speed, aud
 
 ### 2026-10-16: Experiment defined
 
-Waiting for independent speech and NPU baselines. No concurrency tests performed.
+Waiting for independent speech and CPU question-answering baselines. No concurrency tests performed.
 
 ## Conclusion
 

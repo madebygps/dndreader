@@ -8,7 +8,7 @@ The goal is a useful personal tool and an open-source demo, not a commercial pro
 - Preserve static figures and captions for offline viewing where possible.
 - Read the original text aloud with natural, offline voices and sentence highlighting.
 - Ask local AI models about selected passages.
-- Explore Snapdragon X NPU acceleration and document what actually works.
+- Build and validate local question answering on the CPU first; treat GPU/NPU acceleration as optional, hardware-specific follow-up work.
 
 PDF support is out of scope. Image-based graph explanations are a later possibility, not an initial requirement.
 
@@ -23,7 +23,7 @@ Start with the [notes index](notes/README.md) and [provisional architecture](not
 | Experiment | Status | Purpose |
 | --- | --- | --- |
 | [01: Kokoro on Windows ARM64](notes/experiments/01-kokoro-windows-arm64.md) | Complete; offline playback verified | Prove native offline speech and measure playback headroom |
-| [02: Local LLM on Snapdragon NPU](notes/experiments/02-local-llm-snapdragon-npu.md) | Not started | Prove useful local answers with verified NPU execution |
+| [02: Local LLM on Windows ARM64 CPU](notes/experiments/02-local-llm-windows-arm64-cpu.md) | Not started | Establish useful, offline local answers and a CPU performance baseline |
 | [03: Concurrent reading and questions](notes/experiments/03-concurrent-reading-and-questions.md) | Not started | Keep narration uninterrupted while answering questions |
 | [04: Kokoro on NPU](notes/experiments/04-kokoro-npu.md) | Optional; not started | Investigate compatibility and compare against CPU speech |
 
