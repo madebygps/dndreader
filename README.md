@@ -14,7 +14,7 @@ PDF support is out of scope. Image-based graph explanations are a later possibil
 
 ## Current stage
 
-Research and experiments. No application or local performance results exist yet.
+Research and experiments. Local Kokoro generation and playback results are recorded below; no application exists yet.
 
 Start with the [notes index](notes/README.md) and [provisional architecture](notes/architecture.md).
 
@@ -22,12 +22,12 @@ Start with the [notes index](notes/README.md) and [provisional architecture](not
 
 | Experiment | Status | Purpose |
 | --- | --- | --- |
-| [01: Kokoro on Windows ARM64](notes/experiments/01-kokoro-windows-arm64.md) | Not started | Prove native offline speech and measure playback headroom |
+| [01: Kokoro on Windows ARM64](notes/experiments/01-kokoro-windows-arm64.md) | Complete; offline playback verified | Prove native offline speech and measure playback headroom |
 | [02: Local LLM on Snapdragon NPU](notes/experiments/02-local-llm-snapdragon-npu.md) | Not started | Prove useful local answers with verified NPU execution |
 | [03: Concurrent reading and questions](notes/experiments/03-concurrent-reading-and-questions.md) | Not started | Keep narration uninterrupted while answering questions |
 | [04: Kokoro on NPU](notes/experiments/04-kokoro-npu.md) | Optional; not started | Investigate compatibility and compare against CPU speech |
 
-Runnable prototypes will go under `experiments/` when created. Research and run logs live under `notes/`.
+Runnable prototypes live under `experiments/`. Research and run notes live under `notes/`.
 
 ## Offline and licensing boundaries
 
