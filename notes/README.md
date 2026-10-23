@@ -6,7 +6,7 @@ This folder is the project's lab notebook: what we think, what we tried, and wha
 
 1. [Provisional architecture](architecture.md)
 2. [Kokoro on Windows ARM64](experiments/01-kokoro-windows-arm64.md)
-3. [Local LLM on Snapdragon NPU](experiments/02-local-llm-snapdragon-npu.md)
+3. [Local LLM on Windows ARM64 CPU](experiments/02-local-llm-windows-arm64-cpu.md)
 4. [Concurrent reading and questions](experiments/03-concurrent-reading-and-questions.md)
 5. [Optional: Kokoro on NPU](experiments/04-kokoro-npu.md)
 

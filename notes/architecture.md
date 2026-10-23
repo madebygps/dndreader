@@ -12,9 +12,9 @@ Confirmed scope:
 - Offline narration and local questions after setup/import.
 - Sentence-based playback and highlighting as the initial proposed reading unit.
 - Preserve supported static figures, alt text, and captions.
-- Explore the Snapdragon X NPU.
+- Build and validate a CPU-first question-answering path on Windows ARM64.
 
-Not yet decided: final UI design, runtime versions, model variants, application license, and distribution method.
+Not yet decided: final UI design, inference runtime and model, optional accelerator support, application license, and distribution method.
 
 ## Proposed components
 
@@ -24,8 +24,7 @@ Not yet decided: final UI design, runtime versions, model variants, application 
 | Article surface | ARM64 WebView2 | Article formatting, selection, figures, highlighting |
 | Extraction | Mozilla Readability | Main-content extraction; site coverage needs testing |
 | Speech | Kokoro through sherpa-onnx | Documented Kokoro support and Windows ARM64 releases |
-| NPU questions | Foundry Local with a compatible model variant | Evaluate available Snapdragon execution paths first |
-| CPU comparison | ARM64 llama.cpp with a small instruction model | Gemma is a candidate, not a requirement |
+| Questions | Local LLM through a Windows ARM64 CPU runtime | Runtime and model are not selected; keep the app independent of the inference backend |
 | Persistence | SQLite plus local files | Articles, images, progress, preferences, optional audio cache |
 
 ```text
@@ -48,9 +47,9 @@ Public URL import will not work universally. Login-protected, blocked, or JavaSc
 
 ## Hardware principles
 
-Native ARM64 execution does not imply NPU execution. ONNX format does not imply compatibility with every execution provider. A GGUF model usable in llama.cpp is not automatically usable in an NPU runtime.
+Start with native ARM64 CPU inference as the baseline. Optional GPU/NPU acceleration is a separate, hardware-specific path: runtime, driver, model operations, and device support must be verified for each backend. A GGUF model usable in llama.cpp is not automatically usable in an ONNX runtime or accelerator backend.
 
-Start with CPU speech and a separately verified NPU question path. Validate concurrency before committing to the architecture. Kokoro NPU work is optional.
+Validate CPU question answering and concurrent reading on the current device before committing to optional accelerator support. Kokoro NPU work is optional.
 
 ## Offline, sharing, and licensing
 
@@ -65,6 +64,7 @@ Keep model weights outside Git. Record their exact source, version, hash, and li
 | 2026-10-16 | Exclude PDFs | User-selected scope |
 | 2026-10-16 | Target Windows ARM64 and investigate Snapdragon X NPU | User hardware and learning goals |
 | 2026-10-16 | Run small speech and NPU proofs before building the UI | Unverified integration and performance risks |
+| 2026-10-23 | Prioritize CPU-only local question answering; defer accelerator-specific work until a target device is available | User is changing hardware and wants to build the feature on the current laptop |
 
 ## Starting sources
 
